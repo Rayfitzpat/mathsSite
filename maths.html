@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Addition</title>
+    <link rel="stylesheet" type="text/css" href="css/addition.css">
+    <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <script type="text/javascript" src="jScript/Calc.js"></script>
+  
+   
+</head>
+<body  style="background-image: url('images/MathBG6.jpg'); size: cover;">
+    
+    
+
+<div class="box w3-container w3-center"  style=" margin-top: 2%; max-width: auto;">
+    <div class="w3-center">
+    <img class="w3-image w3-center" src="images/Chalkboard.jpg" style ="min-height: 800px; ">
+</div>
+    <div class="text w3-container w3-center">
+        <h1> This is your Times Tables</h1>
+        <table>
+            <tr>
+                <td>Enter Value 1</td>
+                <td><input type="text" id="val1" value="9" /></td>
+            </tr>
+        
+            <tr>
+                <td>Enter Value 2</td>
+                <td><input type="text" id="val2" value="10" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="radio" id="add" name="calc" checked="checked" />Add
+                    <input type="radio" id="sub" name="calc"  />Subtract
+                    <input type="radio" id="mult" name="calc" />Multiply
+                    <input type="radio" id="div" name="calc" />Divide
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td><input type="text" id="result" disabled="disabled"/></td>
+            </tr>
+            <tr>
+                <td>Min</td>
+                <td><input type="text" id="result" disabled="disabled"/></td>
+            </tr>
+            <tr>
+                <td>Max</td>
+                <td><input type="text" id="result" disabled="disabled"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="reset" value="RESET"/></td>
+                <td><input type="button" id="calculate" value="Calculate"/></td>
+                
+            </tr>
+        </table>
+        <p id="resPara">
+            Your results will go here
+        </p>
+    </div>
+  
+
+    
+
+</body>
+</html>
+

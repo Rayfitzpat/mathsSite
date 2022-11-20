@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Fractions Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/fractionCss.css" />
+    <link rel="stylesheet" type="text/css" href="css/navStyle.css" />
+    <script type="text/javascript" src="jscript/fractionsJs.js"></script>
+
+<body style="margin: auto;">
+	<header class="header">
+		<a href="index.html" class="logo">
+		  <img src="images/turtleA.jpg" alt="Logo" height="30px" alt="D2Logo"
+		/></a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"
+		  ><span class="nav-icon"></span
+		></label>
+		<ul class="menu">
+		  <li><a href="choose.html"  >Home</a></li>
+		  <li><a href="volumealculator.html">Volume Calculator</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="factorial.html">Factorials</a></li>
+		  <li><a href="addition.html">Times Tables</a></li>
+		  <li><a href="calculations.html">Calculator</a></li>
+		  <li><a href="fractions.html" style="color: red;">Fractions</a></li>
+		  <li><a href="evaluator.html">Number Evaluator</a></li>
+		  <li><a href="distance.html">Distance</a></li>
+		</ul>
+	  </header>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<section style="padding: 20px;">
+		<h1> Fraction Calculator</h1>
+
+		<table>
+			<!-- row1 -->
+			<tr >
+				<td colspan="6">
+				<label for="decimal">Decimal Places:</label>
+
+				<select id="decimal">
+				<option value="one">1</option>
+				<option value="two">2</option>
+				<option value="three">3</option>
+				</select>
+				</td>
+			</tr>
+			<!-- row2 -->
+			<tr>
+				<td id="topLeft"></td>
+				<td rowspan="3">
+
+				<select id="symbol">
+				<option id="plus" value="plus">+</option>
+				<option id="minus" value="minus">-</option>
+				<option id="multiply" value="multiply">*</option>
+				<option id="divide" value="divide">/</option>
+				</select>
+				</td>
+
+				<td id="topRight"></td>
+				<td rowspan="3">=</td>
+				<td><input id="num" type="text" size="5" style="text-align: center;"></td>
+				<td rowspan="3" id="result" style="width: 100px;">Are you right?</td>
+				
+			</tr>
+			<!-- row3 -->
+			<tr>
+
+				<td><hr width="50px"></td>
+				<td><hr width="50px"></td>
+				<td><hr width="50px"></td>
+			
+				
+			</tr>
+			<!-- Row4 -->
+			<tr>
+			<td id="bottomLeft"></td>
+			<td id="bottomRight"></td>
+			<td><input id="denum" type="text" size="5" style="text-align: center;"></td>
+			
+			
+		</tr>
+		<!-- row5 -->
+			<tr>
+				<td colspan="6">
+					<button id="another" value="another">Another</button>
+					<button id="check" value="check">check</button>
+				</td>
+			</tr>
+		</table>
+
+		<hr>
+
+		<p id="resultPara">
+			Your answer will appear here:
+		</p>
+	</section>
+</body>
+
+</html>

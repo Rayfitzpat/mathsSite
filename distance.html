@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Distance Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/distance.css" />
+	<link rel="stylesheet" type="text/css" href="css/navStyle.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript" src="jscript/distance.js"></script>
+
+<body style="margin: auto;">
+	<header class="header">
+		<a href="index.html" class="logo">
+		  <img src="images/turtleA.jpg" alt="Logo" height="30px" alt="D2Logo"
+		/></a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"
+		  ><span class="nav-icon"></span
+		></label>
+		<ul class="menu">
+		  <li><a href="choose.html"  >Home</a></li>
+		  <li><a href="volumealculator.html">Volume Calculator</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="factorial.html">Factorials</a></li>
+		  <li><a href="addition.html">Times Tables</a></li>
+		  <li><a href="calculations.html">Calculator</a></li>
+		  <li><a href="fractions.html" >Fractions</a></li>
+		  <li><a href="evaluator.html">Number Evaluator</a></li>
+		  <li><a href="Distance.html" style="color: red;">Distance</a></li>
+		</ul>
+	  </header>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<section class = "w3-row" style="padding: 20px;">
+		<h1> Distance Calculator</h1>
+
+		<table class="w3-table">
+			<!-- row1 -->
+			<tr >
+				<td colspan="6">
+				<label for="decimal">Decimal Places:</label>
+
+				<select id="decimal">
+				<option value="one">1</option>
+				<option value="two">2</option>
+				<option value="three">3</option>
+				<option value="four">4</option>
+				<option value="five">5</option>
+				</select>
+				</td>
+			</tr>
+			<!-- row2 -->
+			<tr>
+				<td><input id="num" type="text" size="5" style="text-align: center;"></td>
+				<td>
+
+				<select id="symbol">
+				<option id="inch" value="inch">Inches</option>
+				<option id="foot" value="foot">Feet</option>
+				<option id="yard" value="yard">Yards</option>
+				<option id="metres" value="metres">Metres</option>
+				<option id="kilometres" value="kilometres">Kilometres</option>
+				<option id="miles" value="miles">Miles</option>
+				</select>
+				</td>
+
+				
+				<td rowspan="6" style="width: 30px;">=</td>
+				<td id="inchRes"></td>
+				<td>Inches</td>
+				
+				
+			</tr>
+			<!-- row3 -->
+			<tr>
+				<td></td>
+				<td></td>
+				<td id="feetRes"></td>
+				<td>Feet</td>
+
+			
+				
+			</tr>
+			<!-- Row4 -->
+			<tr>
+				<td></td>
+				<td></td>
+				<td id="yardsRes"></td>
+				<td>Yards</td>
+			
+			
+		</tr>
+			<!-- Row5 -->
+			<tr>
+				<td></td>
+				<td></td>
+				<td id="metresRes"></td>
+				<td>Metres</td>
+			
+			
+		</tr>
+			<!-- Row6 -->
+			<tr>
+				<td></td>
+				<td></td>
+				<td id="kilometresRes"></td>
+				<td>Kilometres</td>
+			
+			
+		</tr>
+			<!-- Row7 -->
+			<tr>
+				<td></td>
+				<td></td>
+				<td id="milesRes"></td>
+				<td>Miles</td>
+			
+			
+		</tr>
+		<!-- row8 -->
+			<tr>
+				<td colspan="6">
+					<button id="reset" value="reset">Reset</button>
+					<button id="check" value="check">check</button>
+				</td>
+			</tr>
+		</table>
+
+		
+	</section>
+</body>
+
+</html>

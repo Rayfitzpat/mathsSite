@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/choose.css">
+    
+    <title>Home</title>
+</head>
+<body style="background-image: url('images/mathBG.jpg')">
+  
+    <div class="swiper-container">
+      <h1>What would you like to do?</h1>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="imgBx">
+               <a href="volumealculator.html"> <img src="images/turtle2+2.jpg"></a>
+            </div>
+            <div class="details">
+                <h3>Volume Calculator<br><span>Plus Speed & Distance</span></h3>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgBx">
+              <a href="factorial.html"><img src="images/turtleA.jpg"></a>
+            </div>
+            <div class="details">
+                <h3>Fatorials<br><span>You've got the power</span></h3>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgBx">
+              <a href="quiz.html"><img src="images/turtleDrawing.jpg"></a>
+            </div>
+            <div class="details">
+                <h3>Maths Quiz<br><span>How many can you get?</span></h3>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgBx">
+              <a href="addition.html"> <img src="images/turtlePencil.jpg"></a>
+            </div>
+            <div class="details">
+                <h3>Times Tables<br><span>3 * 3 = 9</span></h3>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgBx">
+              <a href="calculations.html"> <img src="images/turtleScooter.jpg"></a>
+            </div>
+            <div class="details">
+                <h3>Calculator<br><span>+ - x /</span></h3>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgBx">
+              <a href="fractions.html"> <img src="images/turtleGlobe.jpg"></a>
+            </div>
+            <div class="details">
+                <h3>Fractions<br><span>Do you know your fractions?</span></h3>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgBx">
+              <a href="evaluator.html"> <img src="images/turtleBag.jpg"></a>
+            </div>
+            <div class="details">
+                <h3>Number Evaluator<br><span>Give a start and end position and ill tell you whats inbetween.</span></h3>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="imgBx">
+              <a href="distance.html">  <img src="images/turtleTable.jpg"></a>
+            </div>
+            <div class="details">
+                <h3>Distance <br><span>Inches, Feet, Metres and More!!</span></h3>
+            </div>
+          </div>
+          
+        </div>
+  
+    
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script type="text/javascript" src="jscript/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 250,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+</body>
+</html>

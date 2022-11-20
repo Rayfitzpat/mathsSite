@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" type="text/css" href="css/calculations.css">
+		<link rel="stylesheet" type="text/css" href="css/navStyle.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script type="text/javascript" src="jscript/Calculations.js"></script>
+	</head>
+	<body>
+
+		<header class="header">
+            <a href="index.html" class="logo">
+              <img src="images/turtleA.jpg" alt="Logo" height="30px" alt="D2Logo"
+            /></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"
+              ><span class="nav-icon"></span
+            ></label>
+            <ul class="menu">
+              <li><a href="choose.html"  >Home</a></li>
+			  <li><a href="volumealculator.html">Volume Calculator</a></li>
+			  <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="factorial.html" >Factorials</a></li>
+              <li><a href="addition.html">Times Tables</a></li>
+              <li><a href="calculations.html" style="color: red;">Calculator</a></li>
+              <li><a href="fractions.html">Fractions</a></li>
+              <li><a href="evaluator.html">Number Evaluator</a></li>
+              <li><a href="distance.html">Distance</a></li>
+              
+            </ul>
+		  </header>
+		  
+		  <br >
+		  <br >
+		  <br >
+		  <br >
+		  <br >
+		  
+		  <br class="w3-hide-small">
+		  <br class="w3-hide-small">
+		  <br class="w3-hide-small">
+		  <br class="w3-hide-small">
+		 
+
+		  <h1>Enter value 1 & value 2 and then choose add, subtract, multiply or divide.</h1>
+<table>
+	<tr>
+		<td>Enter Value 1</td>
+		<td><input type="text" id="val1" value="9" /></td>
+	</tr>
+
+	<tr>
+		<td>Enter Value 2</td>
+		<td><input type="text" id="val2" value="10" /></td>
+	</tr>
+	
+	<tr>
+		<td colspan="2">
+			<input type="radio" id="add" name="calc" checked="checked" />Add
+			<input type="radio" id="sub" name="calc"  />Subtract
+			<input type="radio" id="mult" name="calc" />Multiply
+			<input type="radio" id="div" name="calc" />Divide
+		</td>
+		
+	</tr>
+	
+	<tr>
+		<td>Result</td>
+		<td><input type="text" id="result" disabled="disabled"/></td>
+	</tr>
+	
+	<tr>
+		<td><input type="button" id="reset" value="RESET"/></td>
+		<td><input type="button" id="calculate" value="Calculate"/></td>
+		
+	</tr>
+</table>
+<p id="resPara">
+	Your results will go here
+</p>
+
+<hr>
+<h1>Enter 5 values and I will tell you the minimum and maximum number</h1>
+<table>
+	<tr>
+		<td>Numbers: </td>
+		<td><input type ="text" size = "5" id = "numb1"></td>
+		<td><input type ="text" size = "5" id = "numb2"></td>
+		<td><input type ="text" size = "5" id = "numb3"></td>
+		<td><input type ="text" size = "5" id = "numb4"></td>
+		<td><input type ="text" size = "5" id = "numb5"></td>
+	</tr>
+	<tr><td style="color: blanchedalmond;">-</td></tr>
+	<tr>
+		<td colspan="2"><input type="button" id="resetMinMax" value="RESET"/></td>
+		<td colspan="3"><input type="button" id="calculateMinMax" value="Calculate"/></td>
+		
+	</tr>
+</table>
+	<p id="resParaMinMax">Results will appear here</p>
+	</body>
+</html>

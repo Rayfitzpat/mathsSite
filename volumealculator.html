@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Volume Calculator</title>
+		<!-- <link rel="stylesheet" type="text/css" href="css/CSSFile.css"/> -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="css/navStyle.css">
+		<script type="text/javascript" src="jscript/JSFile.js"></script>
+<style>
+body{
+	margin: auto;
+	background-image: url("images/MathBG6.jpg");
+	z-index: 1;
+	}
+	table{
+		margin: auto;
+	}
+
+	
+	section{
+		background-color: rgba(160, 157, 157, 0.5);
+		max-width: 1200px;
+		width: auto;
+		margin: auto;
+		text-align: center;
+		padding: 20px;
+		margin-top: 10px;
+		font-size: x-large;
+		height: 1300px;
+	}
+
+	section2 {
+		background-color: rgba(107, 19, 19, 0.5);
+		z-index: 900;
+		max-width: 1200px;
+		width: 1200px;
+		margin: auto;
+		text-align: center;
+		padding: 20px;
+		margin-top: 20px;
+		font-size: x-large;
+		height: 500px;
+	}
+
+	section3{
+		background-color: rgba(107, 19, 19, 0.5);
+		z-index: 999;
+		max-width: 1200px;
+		/* width: auto; */
+		/* margin: auto; */
+		text-align: center;
+		padding: 20px;
+		margin-top: 200px;
+		font-size: x-large;
+		height: 500px;
+	}
+
+	@media (max-width: 75em) {
+	body{
+		background-color: rgb(113, 117, 117);
+		background-image: none;
+
+	}
+	
+
+}
+</style>
+	</head>
+	<body>
+		<header class="header">
+            <a href="index.html" class="logo">
+              <img src="images/turtleA.jpg" alt="Logo" height="30px" alt="D2Logo"
+            /></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"
+              ><span class="nav-icon"></span
+            ></label>
+            <ul class="menu">
+              <li><a href="choose.html"  >Home</a></li>
+			  <li><a href="volumealculator.html" style="color: red;">Volume Calculator</a></li>
+			  <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="factorial.html" >Factorials</a></li>
+              <li><a href="addition.html">Times Tables</a></li>
+              <li><a href="calculations.html">Calculator</a></li>
+              <li><a href="fractions.html">Fractions</a></li>
+			  <li><a href="evaluator.html">Number Evaluator</a></li>
+			  <li><a href="distance.html">Distance</a></li>
+             
+            </ul>
+		</header>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<section>
+		<h1>Volume Calculator &#40;cm<sup>3</sup>&#41;</h1>
+	<table>
+<tr>
+	<td>
+	<input type="radio" id="Tank" name="shape" checked="checked" onclick="JSFile:SetFields(1)">Tank
+	<input type="radio" id="Cylinder" name="shape"onclick="JSFile:SetFields(2)">Cylinder
+	<input type="radio" id="Sphere" name="shape"onclick="JSFile:SetFields(3)" >Sphere
+	<input type="radio" id="Cone" name="shape"onclick="JSFile:SetFields(4)" >Cone
+	<input type="radio" id="Capsule" name="shape"onclick="JSFile:SetFields(5)" >Capsule
+	</td>
+</tr>
+	</table>
+	<hr>
+	<table>
+		<tr>
+			<td>Length &#40;cm&#41;	</td>
+			<td><input type="text" id= "length" value="10"></td>
+			<td rowspan="5"><img src="images/cube.jpg" title="cube" id="theImage"></td>
+		</tr>
+		<tr>
+			<td>Width &#40;cm&#41;	</td>
+			<td><input type="text" id= "width" value="10"></td>	
+		</tr>
+		<tr>
+			<td>Height &#40;cm&#41;	</td>
+			<td><input type="text" id= "height" value="10"></td>
+		</tr>	
+		<tr>
+			<td>Radius &#40;cm&#41;	</td>
+			<td><input type="text" id= "radius" disabled="disabled"></td>
+		</tr>
+		<tr>
+			<td><input type="button" id="reset" value="Reset"></td>
+			<td><input type="button" id="calculate" value="Calculate"></td>
+		</tr>
+	</table>
+	<hr>
+	<p id="resultPara" style="height: 30px;">
+		Volume result will go here:
+	</p>
+<hr>
+	<br>
+	
+	<div  id="speed">
+		<h1>Speed Calculator</h1>
+	<table >
+		<tr>
+			<td>Distance</td>
+			<td><input type="text" id= "distance" value="1"></td>
+			
+		</tr>
+		<tr>
+			<td>Time </td>
+			<td><input type="text" id= "time" value="5"></td>	
+		</tr>
+		<tr>
+			<td><input type="button" id="resetSpeed" value="Reset"></td>
+			<td><input type="button" id="calculateSpeed" value="Calculate"></td>
+		</tr>
+	</table>
+	<hr>
+	<p id="resultParaSpeed">
+		Speed is defined as Distance over time.
+	</p>
+	<hr>
+	</div>
+
+	<br>
+	
+
+	<div  id="mass">
+		<h1>Mass Calculator</h1>
+	<table >
+		<tr>
+			<td>Density</td>
+			<td><input type="text" id= "massDen" value="2000"></td>
+			
+		</tr>
+		<tr>
+			<td>Volume </td>
+			<td><input type="text" id= "massVol" value="70"></td>	
+		</tr>
+		<tr>
+			<td><input type="button" id="resetMass" value="Reset"></td>
+			<td><input type="button" id="calculateMass" value="Calculate"></td>
+		</tr>
+	</table>
+	<hr>
+	<p id="resultParaMass">
+		Mass is defined as Density over Volume:
+	</p>
+	<hr>
+	</div>
+</section>
+<br>
+<br>
+
+
+
+
+
+
+</body>
+</html>
